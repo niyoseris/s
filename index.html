@@ -27,7 +27,7 @@
     <meta charset="UTF-8">
     <title>Persona</title>
 </head>
-<body>
+<body onload="eski()">
 <h3>Nasıl oynanır?</h3>
 <br>
 Oyuncuların isimleri Oyuncu kutusuna yazılır.
@@ -140,10 +140,17 @@ Kargo Şubesi</textarea>
         localStorage.setItem("oyuncular", document.getElementById("oyuncular").value);
         localStorage.setItem("mekanlar", document.getElementById("mekanlar").value);
          
-        document.getElementById("oyuncular").value = localStorage.getItem("oyuncular");
-        document.getElementById("mekanlar").value = localStorage.getItem("mekanlar");
-        
+       
     
+}
+
+function eski(){
+    if(localStorage.getItem("oyuncular").length > 1){
+    document.getElementById("oyuncular").value = localStorage.getItem("oyuncular");
+    document.getElementById("mekanlar").value = localStorage.getItem("mekanlar");
+    }
+
+        
 }
 
 

@@ -54,8 +54,6 @@ Bu şekilde en fazla 3 tane oylama yapılabilir.
 <br>
 Yeni oyuna başlamak için sayfayı yenileyin :)
 <br>
-Arada ve en sonra boş satır bırakılırsa trip atabilir. Bırakmazsanız güzel olur.
-<br>
 
 
 
@@ -139,10 +137,11 @@ Kargo Şubesi</textarea>
         }
 
 
-        localStorage["oyuncular"] = document.getElementById("oyuncular").value;
-        localStorage["mekanlar"] = document.getElementById("mekanlar").value;
-        document.getElementById("oyuncular").value = localStorage["oyuncular"];
-        document.getElementById("mekanlar").value = localStorage["mekanlar"];
+        localStorage.setItem("oyuncular", document.getElementById("oyuncular").value);
+        localStorage.setItem("mekanlar", document.getElementById("mekanlar").value);
+         
+        document.getElementById("oyuncular").value = localStorage.getItem("oyuncular");
+        document.getElementById("mekanlar").value = localStorage.getItem("mekanlar");
         
     
 }

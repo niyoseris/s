@@ -4,18 +4,7 @@
 
 <html lang="en">
     <style>
-        textarea{
-            width: 20%;
-            margin: 5%;
-            padding: 2%;
-            font-size: large;
-        }
-
-        button{
-            padding: 1%;
-            margin: 2%;
-            font-size: xx-large;
-        }
+    
 
     </style>
 
@@ -26,62 +15,54 @@
 <head>
     <meta charset="UTF-8">
     <title>Persona</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body onload="eski()">
-<h3>Nasıl oynanır?</h3>
-<br>
-Oyuncuların isimleri Oyuncu kutusuna yazılır.
-<br>
-Eklemek istediğiniz mekan varsa Mekanlar kutusuna yazarak ekleyebilirsiniz.
-<br>
-Her şey hazırsa "Çalkala" butonuna basarak oyuna başlayabilirsiniz.
-<br>
-Oyunda, diğer oyuncuların nerede olduğunu bilmeyen bir Casus vardır.
-<br>
-Oyuncular birbirlerine, bulundukları yer ile ilgili sorular sorarak casusu bulmaya çalışırlar.
-<br>
-Casus dışındaki oyuncular, nerede olduklarını, Çalkala butonuna bastıktan sonra adlarına tıklayarak görebileceklerdir.
-<br>
-Casus, oyuncuların nerede olduklarını bulursa oyunu kazanır.
-<br>
-Oyuncular, Casus'un kim olduğunu bulurlarsa oyunu kazanırlar.
-<br>
-Casus olduğundan şüphelenilen kişiler için oylama yapılır. Yarıdan fazla oy alırsa elenir.
-<br>
-Bu şekilde en fazla 3 tane oylama yapılabilir.
-<br>
-3 oylamada Casus bulunamazsa, oyunu Casus kazanır.
-<br>
-Yeni oyuna başlamak için sayfayı yenileyin :)
-<br>
-
 
 
     <center>
-        <textarea placeholder="Oyuncular" id="oyuncular" rows="20">
-Hansel
-Kırmızı Başlıklı Kız 
-Sindirella</textarea>
-        <textarea placeholder="Mekanlar" id="mekanlar" rows="20">
-Gemi 
-Uzay Mekiği
-Uçak 
-İnşaat 
-Okul 
-Orman
-New York
-Trodos
-UFO
-İnternet Cafe
-Pizza Vira
-Karpaz
-Kantara
-Mağusa
-Girne
-Lefkoşa
-Kuzey Kutbu
-Kargo Şubesi</textarea>
+        
+        <table>
+            <th>Oyuncular</th>
+            <th>Mekanlar</th>
+            <tr>
+                <td>
+                    <textarea placeholder="Oyuncular" id="oyuncular" rows="20">
+        Hansel
+        Kırmızı Başlıklı Kız 
+        Sindirella</textarea>    
+                    </td>
+                    
+                <td>
+                    <textarea placeholder="Mekanlar" id="mekanlar" rows="20">
+                        Gemi 
+                        Uzay Mekiği
+                        Uçak 
+                        İnşaat 
+                        Okul 
+                        Orman
+                        New York
+                        Trodos
+                        UFO
+                        İnternet Cafe
+                        Pizza Vira
+                        Karpaz
+                        Kantara
+                        Mağusa
+                        Girne
+                        Lefkoşa
+                        Kuzey Kutbu
+                        Kargo Şubesi</textarea>
+                </td>
+            </tr>
+
+        </table>
+
+        
+
         <button type="button" id="onaybut" onclick="salla()">Çalkala</button>
+        <br>
+        <a href="kural.html"><button>Oynanış</button></a>
     </center>
 
    
